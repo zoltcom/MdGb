@@ -53,7 +53,8 @@ Thank you for viewing.
 <script> 
 /*
 # TODO
-- keydown needs work in dillinger.io
+- keydown needs work in dillinger.io; try this version, works ok, need to refresh entire page if changing javascript! can't rely on auto-refresh.
+- actually, editing anything in Dillinger will screw up keydown, it seems
 - need mouse fallback in case keyboard flaky
  */
 
@@ -106,13 +107,13 @@ $(document).ready( function() {
   $(document).keyup(function(e) {
     var i;
       //left = 37; up = 38; right = 39; down = 40; space = 32; esc = 27;
-      //console.log(e.keyCode);
+      console.log(e.keyCode);
       if (g_keyReady) {
         g_keyReady = false;
         switch(e.keyCode) {
           case 39:
           case 32:
-            i = g_slideIndex - 1 + 2;
+            i = g_slideIndex + 1;
             break;
           case 37:
             i = g_slideIndex - 1;
