@@ -1,12 +1,6 @@
 # GBMD - Gamebook Markdown
 A simple Gamebook engine using jQuery to display pages created with Markdown
 
-# Sample Gamebook
-```Markdown
-# TODO
--
-```
-
 # Development
 - [Markdown Server](https://github.com/ypocat/gfms)
 - Google Chrome
